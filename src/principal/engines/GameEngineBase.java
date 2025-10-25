@@ -2,9 +2,6 @@ package principal.engines;
 
 import grafico.Campo;
 import principal.GameScreen;
-import robo.Robo;
-import java.util.Map;
-import obstaculo.Obstaculo;
 
 // Classe base para todos os motores de jogo
 public abstract class GameEngineBase {

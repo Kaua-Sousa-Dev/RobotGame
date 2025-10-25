@@ -44,15 +44,8 @@ public class Robo {
 	
 	public String getEmoji() {
 		switch (cor.toLowerCase()) {
-			case "vermelho": return "🔴";
-	        case "azul": return "🔵";
-	        case "verde": return "🟢";
-	        case "amarelo": return "🟡";
-	        case "preto": return "⚫";
-	        case "branco": return "⚪";
-	        case "laranja": return "🟠";
-	        case "roxo": return "🟣";
-	        case "marrom": return "🟤";
+			case "vermelho": return "👾";
+	        case "azul": return "🎮";
 	        default: return "🤖"; 
 		}
 	}

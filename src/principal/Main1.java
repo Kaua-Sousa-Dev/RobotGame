@@ -17,18 +17,16 @@ public class Main1 {
 		        plano[i][j] = new Campo();
 		    }
 		}
-		
-		
-		System.out.println("OLÁ, PARA COMEÇAR, DIGITE A COR DO SEU ROBÔ:");
+
 		String cor;
 		while(true) {
 			cor = sc.nextLine();
-			if(cor.matches("[a-zA-Z]+")) // checa se só tem letras maiusculas e minusculas 
+			if(cor.matches("[a-zA-Z]+")) // checa se só tem letras maiusculas e minusculas
 				break;
-			else 
+			else
 				System.out.println("DIGITE NOVAMENTE, SÓ LETRAS POR FAVOR");
 		}
-		
+
 		Robo robo = new Robo (cor);
 		
 		

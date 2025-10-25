@@ -22,7 +22,7 @@ public class Main3 {
 			Robo roboNormal = new Robo("normal");
 			RoboInteligente roboInteligente = new RoboInteligente("inteligente");
 			
-			System.out.println("ROBÔ NORMAL: 🦾");
+			System.out.println("ROBÔ NORMAL: 👾");
 			System.out.println("ROBÔ INTELIGENTE: 🤖");
 			
 			
@@ -122,7 +122,7 @@ public class Main3 {
 	        for (int x = 0; x < 4; x++) {
 	            if (x == robo.getX() && y == robo.getY()) {
 	                if(tipo == 1)
-	            		System.out.print(" 🦾 " );
+	            		System.out.print(" 👾 " );
 	                else 
 	                	System.out.print(" 🤖 " );
 	            } else {

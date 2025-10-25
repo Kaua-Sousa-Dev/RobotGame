@@ -1,4 +1,3 @@
-// Em: src/principal/GameLauncher.java
 package principal;
 
 import javafx.application.Application;
@@ -18,15 +17,13 @@ public class GameLauncher extends Application {
     private BorderPane rootLayout;
     private VBox menuLayout;
 
-    private double menuWidth = 400;
-    private double menuHeight = 300;
     private double gameWidth = 600;
     private double gameHeight = 800;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
-        primaryStage.setTitle("Trabalho Robô - Menu Principal");
+        primaryStage.setTitle("RobotGame - Menu Principal");
 
         // 1. Criar o layout do menu (como antes)
         menuLayout = new VBox(20); // Layout vertical com 20px de espaçamento
@@ -69,7 +66,7 @@ public class GameLauncher extends Application {
 
         rootLayout.setCenter(gameLayout);
 
-        primaryStage.setTitle("Jogo do Robô - Modo " + gameMode);
+        primaryStage.setTitle("RobotGame - Modo " + gameMode);
 
         if (!primaryStage.isFullScreen() && !primaryStage.isMaximized()) {
             primaryStage.setWidth(gameWidth);
@@ -82,7 +79,7 @@ public class GameLauncher extends Application {
     public void showMenu() {
         try {
             rootLayout.setCenter(menuLayout);
-            primaryStage.setTitle("Trabalho Robô - Menu Principal");
+            primaryStage.setTitle("RobotGame - Menu Principal");
 
             if (!primaryStage.isFullScreen() && !primaryStage.isMaximized()) {
                 primaryStage.setWidth(gameWidth);

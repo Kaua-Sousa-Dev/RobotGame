@@ -5,10 +5,6 @@ import principal.GameScreen;
 import robo.Robo;
 import java.util.Random;
 
-/**
- * Lógica do Jogo Modo 2: 2 Robôs Aleatórios.
- * Baseado no seu arquivo Main2.java
- */
 public class GameEngine2 extends GameEngineBase {
 
     private Robo robo1;
@@ -97,7 +93,6 @@ public class GameEngine2 extends GameEngineBase {
 
     @Override
     public String[][] getBoardState() {
-        // Lógica de desenho baseada no Main2.desenharPlano
         String[][] board = new String[4][4];
         for (int y = 3; y >= 0; y--) {
             for (int x = 0; x < 4; x++) {
@@ -107,13 +102,13 @@ public class GameEngine2 extends GameEngineBase {
                 if (x == foodX && y == foodY) {
                     board[x][y] = plano[x][y].getsimbolo(); // "🍇"
                 } else if(fatoRobo1 && fatoRobo2) {
-                    board[x][y] = "⚔️";
+                    board[x][y] = "⚔";
                 } else if(fatoRobo1) {
                     board[x][y] = robo1.getEmoji();
                 } else if(fatoRobo2) {
                     board[x][y] = robo2.getEmoji();
                 } else {
-                    board[x][y] = plano[x][y].getsimbolo(); // " "
+                    board[x][y] = plano[x][y].getsimbolo();
                 }
             }
         }

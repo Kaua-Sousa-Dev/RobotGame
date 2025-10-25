@@ -6,11 +6,6 @@ import robo.Robo;
 import robo.RoboInteligente; //
 import java.util.Random;
 
-/**
- * Lógica do Jogo Modo 3: Robô Normal vs. Inteligente.
- * Baseado no seu arquivo Main3.java
- * A lógica aqui é sequencial: primeiro o normal joga, depois o inteligente.
- */
 public class GameEngine3 extends GameEngineBase {
 
     private Robo roboNormal;
@@ -38,7 +33,7 @@ public class GameEngine3 extends GameEngineBase {
 
         setupFood(); // Define a comida (ex: em 3,3)
 
-        screen.log("ROBÔ NORMAL: 🦾");
+        screen.log("ROBÔ NORMAL: 👾");
         screen.log("ROBÔ INTELIGENTE: 🤖");
         screen.log("\n========================= Vez de robô normal:====================================");
     }
@@ -97,9 +92,6 @@ public class GameEngine3 extends GameEngineBase {
 
     @Override
     public String[][] getBoardState() {
-        // A lógica de desenho do Main3 
-        // mostra um robô de cada vez.
-        // Vamos adaptar para mostrar ambos.
         String[][] board = new String[4][4];
         for (int y = 3; y >= 0; y--) {
             for (int x = 0; x < 4; x++) {
@@ -109,11 +101,11 @@ public class GameEngine3 extends GameEngineBase {
                 if (x == foodX && y == foodY) {
                     board[x][y] = plano[x][y].getsimbolo(); // "🍇"
                 } else if(r1Here && r2Here) {
-                    board[x][y] = "⚔️";
+                    board[x][y] = "⚔";
                 } else if(r1Here) {
-                    board[x][y] = "🦾"; // Emoji do Main3
+                    board[x][y] = "👾";
                 } else if(r2Here) {
-                    board[x][y] = "🤖"; // Emoji do Main3
+                    board[x][y] = "🤖";
                 } else {
                     board[x][y] = plano[x][y].getsimbolo(); // " "
                 }

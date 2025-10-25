@@ -19,8 +19,7 @@ public class Main2 {
 		    }
 		}
 		
-		
-		System.out.println("OLÁ, PARA COMEÇAR, DIGITE A COR DO 1° ROBÔ:");
+
 		String cor1;
 		while(true) {
 			cor1 = sc.nextLine();
@@ -30,8 +29,7 @@ public class Main2 {
 				System.out.println("DIGITE NOVAMENTE, SÓ LETRAS POR FAVOR.");
 		}
 		Robo robo1 = new Robo (cor1);
-		
-		System.out.println("DIGITE A COR DO 2° ROBÔ:");
+
 		String cor2;
 		while(true) {
 			cor2 = sc.nextLine();
@@ -152,7 +150,7 @@ public class Main2 {
 	    System.out.println("    0  1  2  3");
 	}
 	
-	// para da um tempo pro usuário ler 
+	// para dar um tempo pro usuário ler
 	public static void pausar(int tempo) {
 		try {
             Thread.sleep(tempo);
