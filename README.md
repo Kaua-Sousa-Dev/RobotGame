@@ -52,7 +52,7 @@ Este projeto **requer o SDK do JavaFX** para ser executado.
 
 1.  **Clone o Repositório:**
     ```bash
-    
+    git clone https://github.com/Kaua-Sousa-Dev/RobotGame.git
     ```
 
 2.  **Baixe o SDK do JavaFX:**
